@@ -3,12 +3,13 @@ package com.trilochan.micronaut;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import java.util.UUID;
 
 @Entity
 public class Interns {
     @Id
     @GeneratedValue
-    private Long id;
+    private UUID id;
     private String name;
     private String streams;
     private int age;
@@ -23,7 +24,7 @@ public class Interns {
 
     }
 
-    public Long getId() {
+    public UUID getId() {
         return id;
     }
 
